@@ -31,8 +31,7 @@ def calc():
             print('Correct!')
 
         elif str(correct_answer) != user_answer:
-            print(str(user_answer) +' '+ 'is wrong answer ;(. Correct answer was '+' '+ str(correct_answer))
-            print("Let's try again " + user_name)
+            print(f"{user_answer} is wrong answer ;(. Correct answer was {correct_answer}.\nLet's try again {user_name} !")
             exit()
 
     print('Congratulation ' + user_name)
