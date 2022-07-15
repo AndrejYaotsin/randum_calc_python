@@ -2,7 +2,7 @@ import random
 def calc():
     print('Welcome to the Calculat!')
     user_name = input('May I have your name?: ')
-    print('Hello, ' + user_name)
+    print(f"Hello {user_name}")
     print('What is the result of the of the expression?')
 
     i = 0
@@ -15,7 +15,7 @@ def calc():
         random_index = random.randint(0, len(arr_operator) - 1)
         ran_operator = (arr_operator[random_index])
 
-        print(str(ran_num1) + ' ' + ran_operator + ' ' + str(ran_num2))
+        print(f"{ran_num1} {ran_operator} {ran_num2}")
 
         correct_answer = 0
 
